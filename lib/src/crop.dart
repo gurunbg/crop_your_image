@@ -439,7 +439,7 @@ class _CropEditorState extends State<_CropEditor> {
   @override
   Widget build(BuildContext context) {
     return _isImageLoading
-        ? Center(child: const CircularProgressIndicator())
+        ? Center(child: const CupertinoActivityIndicator())
         : Stack(
             children: [
               Listener(
